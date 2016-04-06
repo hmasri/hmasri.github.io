@@ -1,0 +1,49 @@
+# Site settings
+title: Dr. Hassan Masri
+email: florentin@domain.com
+
+url: http://hmasri.github.io
+#url: http://docker.dev:4000
+
+baseurl: ''
+description: "It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+skills: "Doctor primar ORL - Specialist in chirurgie estetica faciala si cervico-faciala"
+meta_author: Florentin Sardan
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: ["node_modules", "bower_components", "bower.json", "package.json", "Gruntfile.js"]
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 3E3F3A
+  primary-rgb: "62,63,58"
+  secondary: 3E3F3A
+  secondary-dark: 3E3F3A
+
+
+collections:
+  articles:
+    output: true
+    permalink: /despre/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+      date: 2016-03-01 10:00:00    

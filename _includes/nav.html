@@ -1,0 +1,46 @@
+   <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top cbp-af-header">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{{site.baseurl}}/">Home</a>
+                    </li>
+                    <li class="dropdown">
+				        <a id="drop1" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				        Articole <span class="caret"></span>
+				        </a>
+				        <ul class="dropdown-menu" aria-labelledby="drop1">
+				            {% assign groups = site.articles | group_by: "category" | sort: "name" %}
+				            
+				            {% for group in groups %}
+				            <p>{{ group.name}}</p>
+					            {% for article in group.items %}
+					                <li role="presentation"><a href="{{ article.url | prepend: site.baseurl }}">{{article.title}}</a></li>
+					            {% endfor %}
+					            <li role="separator" class="divider"></li>
+					        {% endfor %}
+				        </ul>
+				        
+				    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>

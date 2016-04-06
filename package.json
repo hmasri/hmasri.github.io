@@ -1,0 +1,31 @@
+{
+  "name": "HassanMasri",
+  "version": "1.0.0",
+  "description": "The beautiful Hassan Masri static website",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-bowercopy": "^1.2.4"
+  },
+  "devDependencies": {
+    "bootlint": "^0.14.2",
+    "bower": "^1.7.7",
+    "grunt": "^0.4.5",
+    "grunt-bowercopy": "^1.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromelachaud/freelancer-theme.git"
+  },
+  "keywords": [
+    "hassan-masri"
+  ],
+  "author": "Florentin Sardan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeromelachaud/freelancer-theme/issues"
+  },
+  "homepage": "http://www.hassanmasri.ro/"
+}
