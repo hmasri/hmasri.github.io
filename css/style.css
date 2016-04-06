@@ -130,7 +130,7 @@ header .intro-text .skills {
 }
 
 .cbp-af-header .navbar-brand {
-    font-size: 2em;
+    font-size: 1em;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -141,10 +141,14 @@ header .intro-text .skills {
 }
 
 .cbp-af-header.cbp-af-header-shrink .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 @media(min-width:768px) {
+	.cbp-af-header .navbar-brand {
+        font-size: 2em;
+	}
+    
     header .intro-text .name {
         font-size: 4.75em;
     }
@@ -157,7 +161,7 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
